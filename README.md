@@ -1,5 +1,5 @@
-# Pokedex
-Pokedex usando React.
+# Pokedex [![Pokedex v0.1](https://img.shields.io/badge/Pokedex%20-v0.1-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
+**Pokedex** usando React.
 
 ## Instructivo
 ```
