@@ -5,7 +5,7 @@
 ```
 git clone [url_repositorio]
 cd pokedex
-git init
+npm install
 yarn start
 ```
 
