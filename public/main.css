@@ -1,0 +1,180 @@
+@keyframes AnimatedBackground {
+  0% {
+    background-position: 50% 0%; }
+  50% {
+    background-position: 51% 100%; }
+  100% {
+    background-position: 50% 0%; } }
+
+.App {
+  background: linear-gradient(1deg, #278970, #167e78, #263238);
+  background-size: 600% 600%;
+  animation: AnimationName 34s ease infinite; }
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif; }
+
+.App {
+  position: relative;
+  width: 100%; }
+  .App__title {
+    cursor: default;
+    margin-top: 0;
+    padding-top: 3rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center; }
+
+.LoadingScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background: #278970;
+  color: white; }
+
+.CleanDivider {
+  position: relative;
+  width: 100%;
+  background: white; }
+
+.SearchBar {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0) scale(1);
+  height: 1.4rem;
+  width: 15rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #ebf5f0;
+  border-radius: 6rem;
+  transition: box-shadow 1s ease, transform 0.25s ease; }
+  .SearchBar:focus-within, .SearchBar:hover {
+    transform: translate(-50%, -5%) scale(1.01);
+    box-shadow: 0px 0px 0.9375rem 0.1rem rgba(0, 0, 0, 0.2); }
+  .SearchBar__Button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #278970; }
+    .SearchBar__Button:active, .SearchBar__Button:focus {
+      outline: none;
+      border: none; }
+  .SearchBar__Box {
+    position: relative;
+    padding-left: 0.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    color: #278970; }
+    .SearchBar__Box::placeholder {
+      color: #278970; }
+
+.Pokemon {
+  position: relative;
+  text-align: center;
+  height: 12rem;
+  color: #278970;
+  background: #ebf5f0;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease; }
+  .Pokemon:hover {
+    transform: translate(0, -5%);
+    box-shadow: 0px 0px 0.9375rem 0.1rem rgba(0, 0, 0, 0.2); }
+  .Pokemon__img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 60%; }
+  .Pokemon__text {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    background: #278970;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    color: white;
+    padding-top: 1rem; }
+    .Pokemon__text__name {
+      margin-bottom: 0.2rem; }
+    .Pokemon__text__index {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.7); }
+
+.SinglePokemon {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: #2ad1a6; }
+  .SinglePokemon__go-home, .SinglePokemon__go-back, .SinglePokemon__go-next {
+    margin-top: 5rem;
+    background: transparent;
+    outline: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out; }
+    .SinglePokemon__go-home:hover, .SinglePokemon__go-back:hover, .SinglePokemon__go-next:hover {
+      background: #278970;
+      color: #263238;
+      border: 1px solid #2ad1a6;
+      text-decoration: none; }
+    .SinglePokemon__go-home:active, .SinglePokemon__go-home:focus, .SinglePokemon__go-back:active, .SinglePokemon__go-back:focus, .SinglePokemon__go-next:active, .SinglePokemon__go-next:focus {
+      outline: none; }
+  .SinglePokemon__go-home {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0); }
+  .SinglePokemon__go-back {
+    position: absolute;
+    left: 3%;
+    top: 50%; }
+  .SinglePokemon__go-next {
+    position: absolute;
+    right: 3%;
+    top: 50%; }
+  .SinglePokemon__img-container {
+    margin-left: 10%;
+    width: 40%; }
+  .SinglePokemon__info {
+    width: 60%; }
+    .SinglePokemon__info__height__info--type {
+      padding: 0 0.5rem;
+      border-radius: 0.5rem; }
+
+.Footer {
+  width: 100%;
+  bottom: 0; }
+  .Footer__text {
+    color: #2ad1a6; }
+    .Footer__text--del {
+      position: relative;
+      color: rgba(42, 209, 166, 0.3); }
+      .Footer__text--del:after {
+        content: '---';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -50%); }

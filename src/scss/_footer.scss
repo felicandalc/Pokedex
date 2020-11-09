@@ -1,0 +1,26 @@
+.Footer {
+    width: 100%;
+    bottom: 0;
+
+    &__text {
+        color: $accent-light;
+
+        &--del {
+            position: relative;
+            color: rgba($color: $accent-light, $alpha: 0.3);
+
+            &:after {
+                content: '---';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: $white;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &--accent {
+
+        }
+    }
+}

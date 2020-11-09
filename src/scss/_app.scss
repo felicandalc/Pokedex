@@ -1,0 +1,16 @@
+.App {
+    position: relative;
+    width: 100%;
+
+    @extend %AnimatedBackground;
+
+    &__title {
+        cursor: default;
+        margin-top: 0;
+        padding-top: 3rem;
+
+        color: $white;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
