@@ -5,8 +5,8 @@
 ```
 git clone [url_repositorio]
 cd pokedex
-npm install
-yarn start
+npm i
+npm run start
 ```
 
 ### Detalles
