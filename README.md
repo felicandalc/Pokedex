@@ -15,6 +15,6 @@ npm run start
 - [ ] Mejorar la declaratividad del código
 - [ ] Mejorar estilos y pequeñas animaciones
 
-###### Nota: no se construyo para producción (npm run bundle)
+###### Nota: no se construyo para producción (npm run build)
 
 :smiley:
